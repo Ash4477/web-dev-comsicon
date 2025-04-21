@@ -4,3 +4,9 @@
   --main-theme-3: #787a91;
   --main-theme-4: #eeeeee;
 }
+
+body {
+  background-color: var(--main-theme-2);
+  color: white;
+  font-family: Lato, sans-serif;
+}
