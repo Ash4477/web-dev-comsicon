@@ -1,51 +1,39 @@
 import React from "react";
 import "../styles/ProjectDetails.css";
+import { useParams } from "react-router-dom";
 
 function ProjectDetails() {
-  // Dummy data
+  const { id } = useParams(); // project ID from route
+
+  // Placeholder data (replace with context or API call later)
   const project = {
+    id,
     name: "Hackathon Management System",
     description:
-      "A web app to manage hackathon participants, performance, and projects efficiently.",
-    status: "In Progress",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "CSS"],
-    members: ["Alice", "Bob", "Charlie"],
+      "This system helps manage projects, teams, and scoring during hackathons.",
+    members: [
+      { name: "Ali", tasks: ["Design UI", "Fix bug #123"] },
+      { name: "Sara", tasks: ["Backend logic", "APIs"] },
+    ],
   };
 
   return (
-    <div className="project-container">
-      <h2 className="project-title">{project.name}</h2>
+    <div className="project-details-container">
+      <h2>{project.name}</h2>
+      <p className="project-description">{project.description}</p>
 
-      <div className="project-info">
-        <h4>Description</h4>
-        <p>{project.description}</p>
-      </div>
-
-      <div className="project-info">
-        <h4>Status</h4>
-        <p>{project.status}</p>
-      </div>
-
-      <div className="project-info">
-        <h4>Technologies</h4>
-        <div className="tag-list">
-          {project.technologies.map((tech, index) => (
-            <span key={index} className="tag">
-              {tech}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      <div className="project-info">
-        <h4>Team Members</h4>
-        <div className="tag-list">
-          {project.members.map((member, index) => (
-            <span key={index} className="tag">
-              {member}
-            </span>
-          ))}
-        </div>
+      <h3>Members & Tasks</h3>
+      <div className="member-list">
+        {project.members.map((member, index) => (
+          <div key={index} className="member-card">
+            <h4>{member.name}</h4>
+            <ul>
+              {member.tasks.map((task, i) => (
+                <li key={i}>{task}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </div>
   );
