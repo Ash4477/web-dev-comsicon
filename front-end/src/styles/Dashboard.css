@@ -1,0 +1,11 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.task-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
