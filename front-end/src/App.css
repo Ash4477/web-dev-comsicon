@@ -5,11 +5,8 @@
   --main-theme-4: #eeeeee;
 }
 
-<<<<<<< HEAD
-=======
 body {
-  background-color: var(--main-theme-2);
+  background-color: var(--main-theme-1);
   color: white;
   font-family: Lato, sans-serif;
 }
->>>>>>> c5b4fad9e3a41611e76508b3b65f3214ac4d355f
