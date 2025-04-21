@@ -1,0 +1,126 @@
+:root {
+    --main-theme-1: #3a6ea5;
+    --main-theme-2: #4a90e2;
+    --main-theme-3: #2a5885;
+    --light-gray: #f5f7fa;
+    --border-color: #e1e4e8;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --error-color: #e53935;
+    --success-color: #43a047;
+  }
+  
+  .signup-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+  }
+  
+  .signup-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  .signup-container h2 {
+    color: var(--main-theme-1);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .signup-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .signup-container label {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+  }
+  
+  .signup-container input {
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .signup-container input:focus {
+    outline: none;
+    border-color: var(--main-theme-2);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  .signup-container button {
+    background-color: var(--main-theme-2);
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  .signup-container button:hover {
+    background-color: var(--main-theme-3);
+  }
+  
+  .signup-container button:active {
+    transform: scale(0.98);
+  }
+  
+  .error {
+    color: var(--error-color);
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+  }
+  
+  .form-footer a {
+    color: var(--main-theme-2);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .form-footer a:hover {
+    color: var(--main-theme-3);
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .signup-container {
+      max-width: 90%;
+      padding: 1.5rem;
+      margin: 2rem auto;
+    }
+    
+    .signup-container h2 {
+      font-size: 1.5rem;
+    }
+  }
