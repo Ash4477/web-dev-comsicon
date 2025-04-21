@@ -1,0 +1,53 @@
+:root {
+    --main-theme-1: #0f044c;
+    --main-theme-2: #141e61;
+    --main-theme-3: #787a91;
+    --main-theme-4: #eeeeee;
+  }
+  
+  .project-container {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: var(--main-theme-1);
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    color: var(--main-theme-2);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--main-theme-4);
+    padding-bottom: 0.5rem;
+  }
+  
+  .project-info {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-info h4 {
+    margin-bottom: 0.5rem;
+    color: var(--main-theme-3);
+  }
+  
+  .project-info p {
+    line-height: 1.5;
+  }
+  
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .tag {
+    background-color: var(--main-theme-4);
+    color: var(--main-theme-1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  

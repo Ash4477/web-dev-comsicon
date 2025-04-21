@@ -1,0 +1,78 @@
+:root {
+    --main-theme-1: #0f044c;
+    --main-theme-2: #141e61;
+    --main-theme-3: #787a91;
+    --main-theme-4: #eeeeee;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--main-theme-4);
+    color: var(--main-theme-1);
+  }
+  
+  .auth-container {
+    max-width: 400px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: var(--main-theme-2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--main-theme-4);
+  }
+  
+  .auth-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .auth-container input::placeholder {
+    color: var(--main-theme-3);
+  }
+  
+  .auth-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--main-theme-1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-container button:hover {
+    background-color: #070233;
+  }
+  
+  .auth-container .switch-link {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--main-theme-4);
+  }
+  
+  .auth-container .switch-link a {
+    color: var(--main-theme-3);
+    text-decoration: none;
+  }
+  
+  .auth-container .switch-link a:hover {
+    text-decoration: underline;
+  }
+  
